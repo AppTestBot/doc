@@ -1,12 +1,12 @@
 ---
-description: 개발 방법론
+description: 현재 개발된것에서 발전시킬점에대해서
 ---
 
-# Develop Method
+# Improvements
 
-## 1. 형상
+## 1. 로봇에대해서 
 
-## 2. 자동화 
+## 2. 자동 
 
 ## 3. 테스트
 
