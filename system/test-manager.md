@@ -16,7 +16,7 @@ description: 로봇의 흐름과 전체 시스템을 제어하는 모듈에 대�
 
 
 
-![&#xB85C;&#xBD07; &#xB9E4;&#xB2C8;&#xC800;&#xC758; &#xB3D9;&#xC791; &#xC2DC;&#xD000;&#xC2A4; &#xB2E4;&#xC774;&#xC544;&#xADF8;&#xB7A8;](../.gitbook/assets/image%20%2811%29.png)
+![&#xB85C;&#xBD07; &#xB9E4;&#xB2C8;&#xC800;&#xC758; &#xB3D9;&#xC791; &#xC2DC;&#xD000;&#xC2A4; &#xB2E4;&#xC774;&#xC544;&#xADF8;&#xB7A8;](../.gitbook/assets/image%20%2812%29.png)
 
 1. Robot Manager는 내용 기록을 위해 녹화시작 요청을 Streaming/Recorder 서빙 모듈에게 녹화하는 요청을 전
 2. Streaming/Recorder 응답을 보냄과동시에 녹화를 시작
@@ -24,5 +24,7 @@ description: 로봇의 흐름과 전체 시스템을 제어하는 모듈에 대�
 4. subprocess를 통해 패킷 수집기에 패킷을 수집하라는 명령을 보내고, 패킷 수집기는 공유기의 tcpdump를 통해 패킷수집을 시작하고, subproess의 PID를 로봇 매니저에게 전송하여 프로세스의 시작을 알
 5. Robot Manager는 Robot Controller 에게 앱을 시작하라는 요청을 전송
 6. 앱이 실행되면 Robot Controller는 200 OK를 전송 
-7. Robot Robot Controller는 로
+7. Robot Manager는 Robot Controller에게 실험 횟수만큼 터치 명령을 전송
+8. 터치 명령을 받은 Robot Controller는 Click Predictor 서빙 모듈에게 좌표를 요청하는 request를 보내고 , 클릭 위치를 전송받음
+9. 실험이 완료되면 Robot Manager는 Performance Analyzer에게 성능 분석기 실행하도록 요청 
 
