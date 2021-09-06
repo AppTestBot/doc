@@ -10,7 +10,7 @@
   * [Robot Manager](system/test-manager.md)
   * [App Downloader](system/app-downloader.md)
   * [Robot Controller](system/robot-controller.md)
-  * [Appbutton Predictor](system/appbutton-predictor.md)
+  * [Image Analyzer](system/appbutton-predictor.md)
   * [Performance Analyzer](system/performance-analyzer.md)
 * [Evaluation & Analaysis](evaluation-and-analaysis/README.md)
   * [Untitled](evaluation-and-analaysis/untitled.md)

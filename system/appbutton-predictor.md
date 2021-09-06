@@ -1,4 +1,4 @@
-# Appbutton Predictor
+# Image Analyzer
 
 ![](../.gitbook/assets/image%20%282%29.png)
 
@@ -9,7 +9,7 @@
 
 ### 2. 스트리밍및 녹화 모듈
 
-####    2.1. 송수신 메시
+####    2.1. 송수신 메시지 
 
 |  |  |
 | :--- | :--- |

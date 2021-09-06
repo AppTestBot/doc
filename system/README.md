@@ -4,7 +4,7 @@ description: 전체 설계와 시스템에 대해서 설명합니다.
 
 # System And Scenario
 
-## 차
+## 차 례 
 
 ###      1. 기술 스택 <a id="1"></a>
 
