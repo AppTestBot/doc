@@ -5,7 +5,6 @@
   * [연구의 필요성](why-need/need.md)
   * [풀고자 하는문제](why-need/undefined.md)
 * [System And Scenario](system/README.md)
-  * [Tech Stack](system/tech-stack.md)
   * [System Structure](system/system-structure.md)
   * [Robot Manager](system/test-manager.md)
   * [App Downloader](system/app-downloader.md)
