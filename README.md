@@ -32,13 +32,13 @@ description: 모바일 애플리케이션의 성능 테스트를 위한 응용 �
 
 * 로봇 클릭 정확도
 * Object Detection 정확도
-* 장면 탐지 정확
+* 장면 탐지 정확도 
 
 ### 2. 애플리케이션 분석 결과 \([App Analysis Result](evaluation-and-analysis/app-analysis-result.md)\)
 
 * 스피드인덱스와 로딩 시간의 관계
 * 앱과 네트워크의 관계
-* 앱과 UI/Image 분석과의 관
+* 앱과 UI/Image 분석과의 관계 
 
 ## 4. 개선 사항\([Improvements](develop-method.md)\)
 
