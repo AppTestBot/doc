@@ -1,7 +1,7 @@
 # Table of contents
 
 * [INTRODUCE](README.md)
-* [참고링크](undefined.md)
+* [프로젝트 링크](undefined.md)
 
 ## Why Need? <a id="why-need-1"></a>
 
