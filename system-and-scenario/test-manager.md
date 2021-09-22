@@ -21,7 +21,7 @@ description: 로봇의 흐름과 전체 시스템을 제어하는 모듈에 대�
 1. Robot Manager는 내용 기록을 위해 녹화시작 요청을 Streaming/Recorder 서빙 모듈에게 녹화하는 요청을 전
 2. Streaming/Recorder 응답을 보냄과동시에 녹화를 시작
 3. Robot Manager는 실험 시작시간\(성능분석에 필요\)을 로봇 제어기에 보내 실험시작시간을 저장함
-4. subprocess를 통해 패킷 수집기에 패킷을 수집하라는 명령을 보내고, 패킷 수집기는 공유기의 tcpdump를 통해 패킷수집을 시작하고, subproess의 PID를 로봇 매니저에게 전송하여 프로세스의 시작을 알
+4. subprocess를 통해 패킷 수집기에 패킷을 수집하라는 명령을 보내고, 패킷 수집기는 공유기의 tcpdump를 통해 패킷수집을 시작하고, subproess의 PID를 로봇 매니저에게 전송하여 프로세스의 시작을 알림 
 5. Robot Manager는 Robot Controller 에게 앱을 시작하라는 요청을 전송
 6. 앱이 실행되면 Robot Controller는 200 OK를 전송 
 7. Robot Manager는 Robot Controller에게 실험 횟수만큼 터치 명령을 전송
