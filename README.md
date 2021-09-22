@@ -38,7 +38,7 @@ description: 모바일 애플리케이션의 성능 테스트를 위한 응용 �
 
 * 스피드인덱스와 로딩 시간의 관계
 * 앱과 네트워크의 관계
-* 앱과 UI/Image 분석과의 관계 
+* 앱과 UI/Image의 관계 
 
 ## 4. 개선 사항\([Improvements](develop-method.md)\)
 
