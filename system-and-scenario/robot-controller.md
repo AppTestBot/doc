@@ -19,7 +19,7 @@ description: 로봇 제어기와 로봇에대해서 설명합니다.
     <tr>
       <td style="text-align:left">source</td>
       <td style="text-align:left">
-        <p>&#xC2E4;&#xD5D8;&#xC758; &#xC885;</p>
+        <p>&#xC2E4;&#xD5D8;&#xC758; &#xC885;&#xB958;</p>
         <ul>
           <li>click test: &#xB85C;&#xBD07;&#xD130;&#xCE58; &#xD14C;&#xC2A4;&#xD2B8;</li>
           <li>experiment: &#xB85C;&#xBD07; &#xC2E4;&#xD5D8; &#xD14C;&#xC2A4;&#xD2B8;</li>
@@ -29,7 +29,7 @@ description: 로봇 제어기와 로봇에대해서 설명합니다.
     <tr>
       <td style="text-align:left">status</td>
       <td style="text-align:left">
-        <p>&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC131;&#xB2A5; &#xBD84;&#xC11D;&#xC885;</p>
+        <p>&#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC131;&#xB2A5; &#xBD84;&#xC11D;&#xC885;&#xB958;</p>
         <ul>
           <li>start: &#xC2E4;&#xD5D8;&#xC2DC;&#xC791; &#xC2DC;&#xAC04;&#xC744; &#xAE30;&#xB85D;</li>
           <li>appexecute: &#xC560;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158; &#xC2E4;&#xD589;,
