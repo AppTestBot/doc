@@ -10,7 +10,7 @@ description: 받은 데이터를 통합하여 스피드인덱스를 통해 성�
 
 ![&#xC2A4;&#xD53C;&#xB4DC;&#xC778;&#xB371;&#xC2A4; &#xACC4;&#xC0B0; &#xACF5;&#xC2DD;](../.gitbook/assets/image%20%289%29.png)
 
-* webpagetest.org 와 google의 testmypage에서 사용하는 성능 지표 단
+* webpagetest.org 와 google의 testmypage에서 사용하는 성능 지표 
 * 페이지가 시각적으로 얼마나 빠르게 그려지는지에대한 전체 점수를 계산
 * 같은 로딩시간이라도 얼마나 빠르게 이미지들이 화면을 채우는가에따라 실행결과가 달라질 수 있음
 
