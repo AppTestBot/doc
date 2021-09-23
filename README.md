@@ -13,12 +13,12 @@ description: 모바일 애플리케이션의 성능 테스트를 위한 응용 �
 
 ### 2. 주요 기능
 
-1. 각 모듈의 통합 동작 제어 기능\([Robot Manager](system-and-scenario/test-manager.md)\)
-2. 로봇 팔의 앱 버튼 터치 기능 \([Robot Controller](system-and-scenario/robot-controller.md)\)
-3. 다중 스트리밍 기능 \([Image Analyzer](system-and-scenario/appbutton-predictor.md)\)
+1. 각 모듈의 **통합 동작 제어** 기능\([Robot Manager](system-and-scenario/test-manager.md)\)
+2. **로봇 팔**의 앱 버튼 터치 기능 \([Robot Controller](system-and-scenario/robot-controller.md)\)
+3. **다중 스트리밍** 기능 \([Image Analyzer](system-and-scenario/appbutton-predictor.md)\)
    * Object Detection 및 서빙
    * 녹화 및 스트리밍
-4. 성능 분석기능\([Performance Analyzer](system-and-scenario/performance-analyzer.md)\)
+4. **성능 분석**기능\([Performance Analyzer](system-and-scenario/performance-analyzer.md)\)
    * Speed Index의 Application 구현 적용 
    * 서빙 모듈 구현 
 
