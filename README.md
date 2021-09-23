@@ -8,7 +8,7 @@ description: 모바일 애플리케이션의 성능 테스트를 위한 응용 �
 
 ### 1. 목적: 모바일 애플리케이션의 성능을 테스트 하는 로봇
 
-* User Experience 관점의 성능을 테스트하는 로봇
+* **User Experience 관점**의 **성능을 테스트**하는 **로봇**
 * [연구의 필요성](why-need-1/need.md) 및 [풀고자 하는문제](why-need-1/undefined.md)
 
 ### 2. 주요 기능

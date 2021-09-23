@@ -13,7 +13,7 @@ description: 왜 연구를 시작하게되었는지 설명합니다.
 
 ### 2.  성능에 따른 사용자 경험이 다른 응용에서 보다 더 큰 모바일 애플리케이션
 
-
+![&#xBAA8;&#xBC14;&#xC77C;&#xC5B4;&#xD50C;&#xB9AC;&#xCF00;&#xC774;&#xC158;&#xC5D0;&#xC11C;&#xC751;&#xB2F5;&#xC2DC;&#xAC04;&#xACFC;&#xC0AC;&#xC6A9;&#xC790;&#xACBD;&#xD5D8;&#xACFC;&#xC758;&#xC0C1;&#xAD00;&#xAD00;&#xACC4;\(&#xCD9C;&#xCC98;:  MengliYu,  Unravelling  the  relationship  between  response  time  and  user  experience  in  mobileapplica-tions, 2020\[5\]](../.gitbook/assets/userexperience-1-.png)
 
 * 사용자가 최대로 기다릴 수 있는 시간  
 * 웹: 8초
