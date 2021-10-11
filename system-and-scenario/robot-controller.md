@@ -13,7 +13,7 @@ description: 로봇 제어기와 로봇에대해서 설명합니다.
 | source       | <p>실험의 종류 </p><ul><li>click test: 로봇터치 테스트</li><li>experiment: 로봇 실험 테스트 </li></ul>                                                           |
 | status       | <p>애플리케이션 성능 분석종류 </p><ul><li>start: 실험시작 시간을 기록</li><li>appexecute: 애플리케이션 실행, 애플리케이션 실행시간 기록 </li><li>ongoing: 카메라에게 어디를 클릭할지 요청 </li></ul> |
 | starttime    | 앱 터치시기 및 앱 실험 시작 시간을 기록                                                                                                                       |
-| xaxis, yaxis | Button Predict Module로부터 데이터 전송받을때 사                                                                                                          |
+| xaxis, yaxis | Button Predict Module로부터 데이터 전송받을 때 사용                                                                                                        |
 
 ####   1.2 Robot Controller 동작 설명 
 
