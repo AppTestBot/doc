@@ -8,63 +8,30 @@ description: 받은 데이터를 통합하여 스피드인덱스를 통해 성�
 
 ####     1.1 스피드 인덱스 설명 
 
-![&#xC2A4;&#xD53C;&#xB4DC;&#xC778;&#xB371;&#xC2A4; &#xACC4;&#xC0B0; &#xACF5;&#xC2DD;](../.gitbook/assets/image%20%289%29.png)
+![스피드인덱스 계산 공식](<../.gitbook/assets/image (9).png>)
 
-* webpagetest.org 와 google의 testmypage에서 사용하는 **성능 지표** 
+* webpagetest.org 와 google의 testmypage에서 사용하는 **성능 지표 **
 * **페이지가 시각적으로 얼마나 빠르게 그려지는지**에대한 전체 점수를 계산
 * 같은 로딩시간이라도 얼마나 빠르게 이미지들이 화면을 채우는가에따라 실행결과가 달라질 수 있음
 
 ####    1.2 스피드 인덱스 구현 
 
-![&#xC2A4;&#xD53C;&#xB4DC; &#xC778;&#xB371;&#xC2A4; &#xAD6C;&#xD604; &#xBC29;&#xBC95;](../.gitbook/assets/image.png)
+![스피드 인덱스 구현 방법](../.gitbook/assets/image.png)
 
 1. 카메라에 스트리밍 했던 동영상을 읽어 ffmpeg를 통해 **동영상 0.1초 단위로 나누어 png로** 저장
-2. 저장되어있는 **로봇의 클릭 시점**의 파일을 읽어 png와 맞춤
+2. 저장되어있는** 로봇의 클릭 시점**의 파일을 읽어 png와 맞춤
 3. 이미지 유사도를 통해 로딩 시작부터 로딩이 완료된 직후까지의 이미지 들을 모아 스피드 인덱스를 계산할 이미지 그룹으로 만듦
-4. 만들어진 이미지 그룹은 로딩이 완료된 이미지와 유사도비교를 하여 몇 %와 차이가 있는지 총합을 통해 계
+4. 만들어진 이미지 그룹은 로딩이 완료된 이미지와 유사도비교를 하여 몇 %와 차이가 있는지 총합을 통해 계산  
 
 ####    1.3 이용한 이미지 유사도 알고리즘비교 
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <p>&#xC774;&#xBBF8;&#xC9C0;</p>
-        <p>&#xC720;&#xC0AC;&#xB3C4;</p>
-      </th>
-      <th style="text-align:left">&#xC124;&#xBA85;</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">SSIM</td>
-      <td style="text-align:left">&#xBC1D;&#xAE30;, &#xBA85;&#xC554;&#xBE44;, &#xAD6C;&#xC870;&#xC815;&#xBCF4;&#xB85C;
-        &#xC774;&#xBBF8;&#xC9C0;&#xAC04; &#xCC28;&#xC774; &#xBE44;&#xAD50;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">Correlated2d</td>
-      <td style="text-align:left">&#xC11C;&#xB85C;&#xB2E4;&#xB978; &#xB450;&#xC7A5;&#xC758; &#xC601;&#xC0C1;
-        &#xD568;&#xC218;&#xC5D0;&#xC11C; &#xD55C;&#xC7A5;&#xC758; &#xC601;&#xC0C1;
-        &#xD568;&#xC218;&#xB97C; &#xC774;&#xB3D9;&#xC2DC;&#xD0A4;&#xBA70; &#xB450;
-        &#xD568;&#xC218;&#xC73C; &#xACF1;&#xC744; &#xC774;&#xB3D9;&#xBCC0;&#xC704;&#xC758;
-        &#xD568;&#xC218;&#xB85C; &#xD45C;&#xD604;&#xD55C;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">MSE</td>
-      <td style="text-align:left">&#xD53D;&#xC140;&#xAC12; &#xCC28;&#xC774;&#xC5D0;&#xB300;&#xD55C; &#xCE21;&#xC815;&#xAC12;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">PSNR</td>
-      <td style="text-align:left">&#xAC00;&#xC9C8;&#xC218; &#xC788;&#xB294; &#xC7A1;&#xC74C; &#xC804;&#xB825;
-        &#xBE44;&#xAD50;</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">sift, surf</td>
-      <td style="text-align:left">Point feature&#xC744; &#xAE30;&#xBC18;&#xC73C;&#xB85C; &#xD55C; &#xC601;&#xC0C1;
-        &#xD2B9;&#xC9D5; &#xCD94;&#xCD9C;&#xBC29;&#xBC95;</td>
-    </tr>
-  </tbody>
-</table>
+| <p>이미지 </p><p>유사도 </p> | 설명                                                       |
+| ---------------------- | -------------------------------------------------------- |
+| SSIM                   | 밝기, 명암비, 구조정보로 이미지간 차이 비교                                |
+| Correlated2d           | 서로다른 두장의 영상 함수에서 한장의 영상 함수를 이동시키며 두 함수으 곱을 이동변위의 함수로 표현한 |
+| MSE                    | 픽셀값 차이에대한 측정값                                            |
+| PSNR                   | 가질수 있는 잡음 전력 비교                                          |
+| sift, surf             | Point feature을 기반으로 한 영상 특징 추출방법                         |
 
 
 
@@ -72,16 +39,15 @@ description: 받은 데이터를 통합하여 스피드인덱스를 통해 성�
 
 ####    2.1 멀티 프로세스와 큐를 이용한 서빙 모듈 구현 
 
-| parameter | 설명  |
-| :--- | :--- |
-| device | 기기의 종류  |
-| avipath | 녹화된 동영상의 경로 |
-| csvpath | 저장된 csv 의 경로 |
-| pcappath | 저장된 pcap데이터의 경로 |
-| appname | 애플리케이션 이름의 경 |
+| parameter | 설명              |
+| --------- | --------------- |
+| device    | 기기의 종류          |
+| avipath   | 녹화된 동영상의 경로     |
+| csvpath   | 저장된 csv 의 경로    |
+| pcappath  | 저장된 pcap데이터의 경로 |
+| appname   | 애플리케이션 이름의 경    |
 
 1. 성능 분석기와 다른 모듈간의 연산 시간차이 발생으로 인한 **지연시간을 줄이기위해** **멀티프로세스**사용  
    * 성능분석기 연산시간 10분, 다른 모듈들의 연산시간3분 성능분석기때문에 다른 모듈 연산을 기다려야하는 상황 발생
    * 빠른 실행을 위하여 성능분석기 연산시간을 기다리지 않고 다른 프로세스들이 실행되도록구현 
-2. 로봇 매니저로부터 요청받은 결과를 **큐에** 넣고, **큐가 빌때까지 순차적으로 동작**하도록 구현
-
+2. 로봇 매니저로부터 요청받은 결과를** 큐에** 넣고, **큐가 빌때까지 순차적으로 동작**하도록 구현
